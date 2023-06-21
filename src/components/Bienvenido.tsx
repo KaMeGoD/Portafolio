@@ -1,4 +1,5 @@
 import '../style/Bienvenido.css';
+import 'hover.css'
 import logo from "../assets/img/logo.png";
 import saludo from '../assets/img/hola amigo.png';
 import bloques from '../assets/img/bloques.png'
@@ -15,7 +16,7 @@ export const Bienvenido  = () => {
       <div className='capa-main'>
         <div className='izquierda'>
           <h1 className='nombre'>Juan <br />García</h1>
-          <button className='btn-start'>Empezemos</button>
+          <button className='btn-start hvr-pulse-shrink'>Empezemos</button>
         </div>
         <div className='derecha'>
           <img className='saludo' src={saludo} alt="saludos" />
