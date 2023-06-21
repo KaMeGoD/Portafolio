@@ -2,19 +2,19 @@ h1, h2{
   color: #365B6D;
   margin: 0;
 }
-.capa1{
+.bienvenido{
   height: 100vh;
   background-color: #F2F1EC;
 }
 
 
-.capa1 .capa-top{
+.bienvenido .bienvenido-top{
   display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: start;
 }
-.capa-top .logo{
+.bienvenido-top .logo{
   width: 30px;
 }
 .profesion{
@@ -48,6 +48,7 @@ h1, h2{
   border-radius: 25px;
   padding: 15px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .izquierda .btn-start:hover{
   transition: 1000ms;
