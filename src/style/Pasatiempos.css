@@ -1,0 +1,15 @@
+
+.pasatiempos{
+  height: 100vh;
+  background-color: #365B6D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pasatiempo-titulo{
+  color: #F2F1EC;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 150px;
+}

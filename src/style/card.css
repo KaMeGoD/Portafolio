@@ -1,0 +1,42 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  background-color: #f7f7f7;
+  width: 20%;
+  border-radius: 20px;
+  text-align: center;
+  height: 250px;
+  padding: 5px;
+
+  -webkit-box-shadow: 7px 9px 7px -3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 7px 9px 7px -3px rgba(0, 0, 0, 0.6);
+  box-shadow: 7px 9px 7px -3px rgba(0, 0, 0, 0.6);
+}
+img {
+  width: 10px;
+}
+.titulo {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.texto {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.img-card {
+  margin-top: -80px;
+  width: 200px;
+}
+
+.fotografia {
+  width: 180px;
+  margin-top: -73px;
+  margin-bottom: 10px;
+}
+.videojuego {
+  margin-bottom: 10px;
+}

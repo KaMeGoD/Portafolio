@@ -1,0 +1,64 @@
+.Proyectos{
+  height: 100vh;
+  background-color: #F2F1EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+}
+.proyecto{
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+  height: 150px;
+  backdrop-filter: blur(1000px);
+}
+
+
+.calculadora{
+  background-image: url(../assets/img/proyecto1.png);
+}
+.titulo-proyecto{
+  font-size: medium;
+}
+.proyecto .links-proyectos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+.ico{
+  width: 30px;
+}
+
+.Proyectos .izquierda{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo-proyectos{
+  font-size: 37px;
+  text-align: center;
+  font-weight: 700;
+  color: #365B6D;
+}
+.estudiando{
+  width: 400px;
+}
+
+.proyecto-wrap-false{
+  visibility: hidden;
+  
+}
+.proyecto-wrap-true{
+  padding: 50px 100px;
+  backdrop-filter: blur(10px);
+  transition: 1000ms;
+}

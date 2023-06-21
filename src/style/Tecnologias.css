@@ -1,0 +1,26 @@
+@import "@glidejs/glide/dist/css/glide.core.min.css";
+@import "@glidejs/glide/dist/css/glide.theme.min.css";
+
+.tecnologias{
+  height: 100vh;
+  background-color: #365B6D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tecnologias-titulo{
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 150px;
+  margin-top: -120px;
+}
+
+.glide__slides{
+  margin: 5px 128px;
+}
+
+.cuadro img{
+  width: 200px;
+}
