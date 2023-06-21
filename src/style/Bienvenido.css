@@ -50,6 +50,7 @@ h1, h2{
   margin-top: 20px;
 }
 .izquierda .btn-start:hover{
+  transition: 1000ms;
   color: white;
 }
 
