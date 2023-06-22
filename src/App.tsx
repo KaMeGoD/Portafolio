@@ -11,19 +11,16 @@ import ScrollReveal from 'scrollreveal';
 import { useRef, useEffect } from 'react';
 
 function App() {
-  const bienvenidoRef = useRef<HTMLDivElement>();
+  const bienvenidoRef = useRef<HTMLDivElement>(null);
   const pasatiemposRef = useRef<HTMLDivElement>(null);
-  const proyectosRef = useRef<HTMLDivElement>(null);
-  const tecnologiasRef = useRef<HTMLDivElement>(null);
-  const contactoRef = useRef<HTMLDivElement>(null);
 
-  const scrollToBottomBienvenido = () =>{
+  const scrollToBottonBienvenido = () =>{
     pasatiemposRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }
 
   useEffect(()=>{
     const sr = ScrollReveal();
-    sr.reveal(bienvenidoRef.current!, {
+    sr.reveal(bienvenidoRef.current! , {
       origin: 'top',
       duration: 1000,
       distance: '50px'
@@ -32,32 +29,17 @@ function App() {
       origin: 'left',
       duration: 1000,
       distance: '30px',
-    });
-    sr.reveal(proyectosRef.current!, {
-      origin: 'top',
-      duration: 1000,
-      distance: '30px',
-    });
-    sr.reveal(tecnologiasRef.current!, {
-      origin: 'left',
-      duration: 1000,
-      distance: '30px',
-    });
-    sr.reveal(contactoRef.current!, {
-      origin: 'bottom',
-      duration: 1000,
-      distance: '30px',
-    });
+    })
   },[]);
 
   
   return (
     <>
-      <Bienvenido onClick={scrollToBottomBienvenido} refBienvenidos={bienvenidoRef}/>
+      <Bienvenido onClick={scrollToBottonBienvenido} refBienvenidos={bienvenidoRef}/>
       <Pasatiempos refPasatiempos={pasatiemposRef}/>
-      <Proyectos refProyectos={proyectosRef}/>
-      <Tecnologias refTecnologias={tecnologiasRef}/>
-      <Contacto refContacto={contactoRef}/>
+      <Proyectos />
+      <Tecnologias />
+      <Contacto />
     </>
   )
 }

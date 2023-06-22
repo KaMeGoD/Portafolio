@@ -52,12 +52,6 @@
   border-radius: 25px;
   padding: 15px;
   margin-top: 20px;
-  cursor: pointer;
-}
-
-.form-submit:hover{
-  transition: 2000ms;
-  color: white;
 }
 .text-area{
   width: 80%;

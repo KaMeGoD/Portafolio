@@ -18,11 +18,7 @@ export const Tecnologias = () => {
     const glide = new Glide(".glide", {
       perView: 3,
       startAt: 3,
-      type: "carousel",
-      focusAt: 'center',
-      autoplay: 7000,
-      hoverpause: true,
-      animationDuration: 3000
+      type: "carousel"
     });
     glide.mount();
     return ()=>{

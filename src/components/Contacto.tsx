@@ -6,11 +6,7 @@ import Linkedin from '../assets/img/linkedin.svg'
 import Curriculum from '../assets/img/file-arrow-down-solid.svg'
 import '../style/Contacto.css'
 
-interface PropsContacto{
-  refContacto : React.LegacyRef<HTMLDivElement>;
-}
-
-export const Contacto: React.FC<PropsContacto> = ({refContacto}) => {
+export const Contacto: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -28,7 +24,7 @@ export const Contacto: React.FC<PropsContacto> = ({refContacto}) => {
 
   return (
     <>
-      <div className='contacto' ref={refContacto}>
+      <div className='contacto'>
         <div className='header-contacto'>
           <img src={Logo} alt="-header-logo" />
           <h3 className='header-titulo'>Contacto</h3>
@@ -40,7 +36,7 @@ export const Contacto: React.FC<PropsContacto> = ({refContacto}) => {
           <input className='form-input' type="email" name="user_correo" placeholder='Tu Correo'/>
           <label>Mensaje</label>
           <textarea className='form-input text-area' name="user_text" placeholder='Saludame!'/>
-          <input className='form-submit hvr-pulse-shrink' type="submit" value="Enviar" />
+          <input className='form-submit' type="submit" value="Enviar" />
         </form>
         <div className='icons-contacto'>
           <a href="https://github.com/KaMeGoD?tab=repositories" target='_blank'><img src={GitAzul} alt="github" /></a> 
