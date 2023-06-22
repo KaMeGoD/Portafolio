@@ -35,6 +35,27 @@ export const Contacto: React.FC = () => {
     e.target.classList.remove('activado');
   }
 
+  const handleOnChangeInputNombre = (e: React.ChangeEvent<HTMLInputElement>) =>{
+    const inputNombre = e.target.value;
+    const reglaSinNumeros = inputNombre.replace(/[^a-zA-Z\s]/g, '');
+    e.target.value = reglaSinNumeros;
+
+    if (inputNombre.length > 20) {
+      e.target.value = inputNombre.slice(0, 20);
+    }
+  }
+  const handleOnChangeInputCorreo = (e: React.ChangeEvent<HTMLInputElement>) =>{
+    const inputCorreo = e.target.value;
+    if (inputCorreo.length > 20) {
+      e.target.value = inputCorreo.slice(0, 20);
+    }
+  }
+  const handleOnChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) =>{
+    const inputCorreo = e.target.value;
+    if (inputCorreo.length > 300) {
+      e.target.value = inputCorreo.slice(0, 300);
+    }
+  }
   
 
   return (
@@ -46,11 +67,11 @@ export const Contacto: React.FC = () => {
         </div>
         <form className='contacto-formulario' ref={form} onSubmit={sendEmail}>
           <label htmlFor='nombre'>Nombre</label>
-          <input onFocus={handleOnFocusInput} onBlur={handleOnBlurInput} className='form-input' type="text" id='nombre' name="user_nombre" placeholder='Tu Nombre'/>
+          <input onChange={handleOnChangeInputNombre} onFocus={handleOnFocusInput} onBlur={handleOnBlurInput} className='form-input' type="text" id='nombre' name="user_nombre" placeholder='Tu Nombre'/>
           <label htmlFor='correo'>Correo</label>
-          <input onFocus={handleOnFocusInput} onBlur={handleOnBlurInput} className='form-input' id='correo' type="email" name="user_correo" placeholder='Tu Correo'/>
+          <input onChange={handleOnChangeInputCorreo} onFocus={handleOnFocusInput} onBlur={handleOnBlurInput} className='form-input' id='correo' type="email" name="user_correo" placeholder='Tu Correo'/>
           <label htmlFor='mensaje'>Mensaje</label>
-          <textarea onFocus={handleOnFocusTextArea} onBlur={handleOnBlurTextArea} id='mensaje' className='form-input text-area' name="user_text" placeholder='Saludame!'/>
+          <textarea onChange={handleOnChangeTextArea} onFocus={handleOnFocusTextArea} onBlur={handleOnBlurTextArea} id='mensaje' className='form-input text-area' name="user_text" placeholder='Saludame!'/>
           <input className='form-submit hvr-pop' type="submit" value="Enviar" />
         </form>
         <div className='icons-contacto'>

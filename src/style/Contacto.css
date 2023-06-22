@@ -43,6 +43,10 @@
   width: 50%;
 }
 
+#nombre{
+  text-transform: capitalize;
+}
+
 .form-submit{
   width: 50%;
   font-weight: 300;
