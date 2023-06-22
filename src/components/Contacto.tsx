@@ -45,7 +45,7 @@ export const Contacto: React.FC<PropsContacto> = ({refContacto}) => {
         <div className='icons-contacto'>
           <a href="https://github.com/KaMeGoD?tab=repositories" target='_blank'><img src={GitAzul} alt="github" /></a> 
           <a href="https://www.linkedin.com/in/juangarciadevfe/" target='_blank'><img src={Linkedin} alt="Linkedin" /></a>
-          <a href="https://drive.google.com/file/d/1pXsZXTrvWQ__SBNI_g6K7595ffe8z1MG/view?usp=drive_link" target='_blank'><img className='cv' src={Curriculum} alt="Curriculum" /></a>
+          <a href="https://drive.google.com/file/d/156NKtB2DMvifpb-ABOw3CfBWBVnt1RoP/view?usp=drive_link" target='_blank'><img className='cv' src={Curriculum} alt="Curriculum" /></a>
         </div>
       </div>
 
