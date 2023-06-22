@@ -48,7 +48,6 @@ export const Contacto: React.FC<PropsContacto> = ({refContacto}) => {
           <a href="https://drive.google.com/file/d/156NKtB2DMvifpb-ABOw3CfBWBVnt1RoP/view?usp=drive_link" target='_blank'><img className='cv' src={Curriculum} alt="Curriculum" /></a>
         </div>
       </div>
-
     </>
   );
 };
