@@ -41,7 +41,7 @@ export const Contacto: React.FC = () => {
         <div className='icons-contacto'>
           <a href="https://github.com/KaMeGoD?tab=repositories" target='_blank'><img src={GitAzul} alt="github" /></a> 
           <a href="https://www.linkedin.com/in/juangarciadevfe/" target='_blank'><img src={Linkedin} alt="Linkedin" /></a>
-          <a href="hhttps://drive.google.com/file/d/1LoUQzqus22QqzR7aFsLTWNZ-IcefHFwd/view?usp=drive_link" target='_blank'><img className='cv' src={Curriculum} alt="Curriculum" /></a>
+          <a href="https://drive.google.com/file/d/1LoUQzqus22QqzR7aFsLTWNZ-IcefHFwd/view?usp=drive_link" target='_blank'><img className='cv' src={Curriculum} alt="Curriculum" /></a>
         </div>
       </div>
     </>
