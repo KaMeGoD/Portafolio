@@ -51,7 +51,7 @@ h1, h2{
   cursor: pointer;
 }
 .izquierda .btn-start:hover{
-  transition: 1000ms;
+  transition: 500ms;
   color: white;
 }
 

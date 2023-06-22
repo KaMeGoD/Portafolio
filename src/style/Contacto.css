@@ -53,14 +53,19 @@
   padding: 15px;
   margin-top: 20px;
 }
+.form-submit:hover{
+  transition: 500ms;
+  color: white;
+}
+
 .text-area{
   width: 80%;
   height: 150px;
+  resize: none;
 }
 
 .activado{
   border: 1px solid #41C1BA ;
-
 }
 
 .icons-contacto{
