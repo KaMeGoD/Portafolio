@@ -18,7 +18,9 @@ export const Tecnologias = () => {
     const glide = new Glide(".glide", {
       perView: 3,
       startAt: 3,
-      type: "carousel"
+      type: "carousel",
+      autoplay: 4000,
+      focusAt: 2
     });
     glide.mount();
     return ()=>{
@@ -30,18 +32,18 @@ export const Tecnologias = () => {
     <>
       <div className="tecnologias">
         <h3 className='tecnologias-titulo'>Tecnologías</h3>
-        <div className='glide '>
+        <div className='glide'>
           <div className='glide__track' data-glide-el="track">
             <ul className='glide__slides'>
-              <li className='glide_slide'> <div className="cuadro"><img src={HTML5} alt="HTML5"/></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={CSS3} alt="CSS" /></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={JavaScript} alt="JavaScript" /></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={TypeScript} alt="TypeScript" /></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={React} alt="React" /></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={GitHub} alt="GitHub" /></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={Yarn} alt="Yarn" /></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={NPM} alt="NPM" /></div></li>
-              <li className='glide_slide'><div className='cuadro'><img src={Node} alt="NPM" /></div></li>
+              <li className='glide_slide'><img src={HTML5} alt="HTML5"/></li>
+              <li className='glide_slide'><img src={CSS3} alt="CSS" /></li>
+              <li className='glide_slide'><img src={JavaScript} alt="JavaScript" /></li>
+              <li className='glide_slide'><img src={TypeScript} alt="TypeScript" /></li>
+              <li className='glide_slide'><img src={React} alt="React" /></li>
+              <li className='glide_slide'><img src={GitHub} alt="GitHub" /></li>
+              <li className='glide_slide'><img src={Yarn} alt="Yarn" /></li>
+              <li className='glide_slide'><img src={NPM} alt="NPM" /></li>
+              <li className='glide_slide'><img src={Node} alt="NPM" /></li>
             </ul>
           </div>
         </div>

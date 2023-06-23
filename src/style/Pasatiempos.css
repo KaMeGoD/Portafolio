@@ -11,5 +11,12 @@
   color: #F2F1EC;
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
+}
+
+/* Hasta 480px */
+@media only screen and (max-width: 480px) {
+  .pasatiempo-titulo{
+    margin-bottom: 20px
+  }
 }

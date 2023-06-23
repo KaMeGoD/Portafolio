@@ -20,7 +20,7 @@ export const Bienvenido: React.FC<PropsBienvenido>  = ({refBienvenidos, onClick}
         <img className='logo' src={logo} alt="logo" />
         <h2 className='profesion'>Desarrollador Web</h2>
       </div>
-      <div className='capa-main'>
+      <div className='bienvenido-main'>
         <div className='izquierda'>
           <h1 className='nombre'>Juan <br />García</h1>
           <button onClick={onClick} className='btn-start hvr-pop'>Empecemos</button>

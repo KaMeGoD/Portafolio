@@ -21,6 +21,16 @@
   margin: 5px 128px;
 }
 
-.cuadro img{
+.glide_slide img{
   width: 200px;
+}
+
+@media (max-width: 480px) {
+  /* Ajusta los estilos para pantallas pequeñas */
+  .glide_slide img{
+    width: 60px;
+  }
+  .glide{
+    width: 100%;
+  }
 }

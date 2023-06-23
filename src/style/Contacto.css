@@ -84,3 +84,9 @@
 .icons-contacto .cv{
   width: 23px;
 }
+
+@media (max-width: 480px) {
+  .contacto-formulario{
+    width: 100%;
+  }
+}

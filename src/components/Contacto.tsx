@@ -46,8 +46,8 @@ export const Contacto: React.FC = () => {
   }
   const handleOnChangeInputCorreo = (e: React.ChangeEvent<HTMLInputElement>) =>{
     const inputCorreo = e.target.value;
-    if (inputCorreo.length > 20) {
-      e.target.value = inputCorreo.slice(0, 20);
+    if (inputCorreo.length > 50) {
+      e.target.value = inputCorreo.slice(0, 50);
     }
   }
   const handleOnChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) =>{
