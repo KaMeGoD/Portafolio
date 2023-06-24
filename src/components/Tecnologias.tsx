@@ -8,7 +8,7 @@ import Yarn from '../assets/img/carousel/Yarn.png'
 import NPM from '../assets/img/carousel/NPM.png'
 import Node from '../assets/img/carousel/NodeJS.png'
 import '../style/Tecnologias.css';
-import Glide from '@glidejs/glide'
+import Glide from '@glidejs/glide';
 import { useEffect } from "react";
 
 
