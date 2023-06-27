@@ -11,8 +11,8 @@
 }
 .tecnologias-titulo{
   color: white;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 600;
   margin-bottom: 150px;
   margin-top: -120px;
 }
@@ -28,9 +28,10 @@
 @media (max-width: 480px) {
   /* Ajusta los estilos para pantallas pequeñas */
   .glide_slide img{
-    width: 60px;
+    width: 100px;
   }
   .glide{
     width: 100%;
+    margin-left: 40px;
   }
 }

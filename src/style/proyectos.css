@@ -67,6 +67,7 @@
 .derecha{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -75,7 +76,9 @@
   .Proyectos{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
   }
   .estudiando{
     display: none;

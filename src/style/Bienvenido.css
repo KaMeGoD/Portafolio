@@ -26,15 +26,17 @@ h1, h2{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 300px;
-  margin-top: 100px;
+  gap: 70px;
+  margin-top: 7.5rem;
 }
 
 .izquierda{
+  width: 30%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.nombre{
+.izquierda .nombre{
   font-size: 87px;
   font-weight: bold;
   text-align: center;
@@ -49,20 +51,29 @@ h1, h2{
   padding: 15px;
   margin-top: 20px;
   cursor: pointer;
+  width: 60%;
 }
 .izquierda .btn-start:hover{
   transition: 500ms;
   color: white;
 }
 
-.derecha .saludo{
-  position: absolute;
-  top: 100px;
-  right: 280px;
-  width: 400px;
+.derecha{
+  width: 30%;
 }
 .derecha .bloque{
-  width: 80%
+  height: 24rem;
+  background-image: url(../assets/img/bloques.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:right;
+  background-origin: padding-box;
+  position: relative;
+}
+.derecha .saludo{
+  width: 23rem;
+  position: absolute;
+  left: 70px;
 }
 
 /* Hasta 480px */
@@ -73,60 +84,12 @@ h1, h2{
     align-items: center;
     justify-content: center;
   }
-  .bienvenido-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
-  }
-  .nombre{
-    font-size: 50px;
-  }
-  .bienvenido-main .derecha{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-  }
-  .derecha .saludo{
-    position: absolute;
-    top: 270px;
-    right: 60px;
+
+  .izquierda .btn-start{
     width: 200px;
   }
-}
 
-/* De 481px a 768px */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .bienvenido .bienvenido-top{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  .bienvenido-main .derecha{
+    display: none;
   }
-  .bienvenido-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    margin-top: 120px;
-  }
-  .nombre{
-    font-size: 80px;
-  }
-  .derecha{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .derecha .saludo{
-    position: absolute;
-    top: 490px;
-    right: 220px;
-    width: 350px;
-  }
-  
 }
