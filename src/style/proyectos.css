@@ -23,6 +23,9 @@
 .calculadora{
   background-image: url(../assets/img/proyecto1.png);
 }
+.juegoPPT{
+  background-image: url(../assets/img/proyecto2.png);
+}
 .titulo-proyecto{
   font-size: medium;
 }
@@ -57,9 +60,14 @@
   
 }
 .proyecto-wrap-true{
-  padding: 50px 100px;
+  padding: 44px 100px 43px 100px;
   backdrop-filter: blur(10px);
   transition: 1000ms;
+}
+.derecha{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Hasta 480px */
