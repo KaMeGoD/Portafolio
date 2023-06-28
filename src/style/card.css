@@ -38,8 +38,8 @@
   margin-bottom: 10px;
 }
 
-/* Hasta 480px */
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 850px) {
   .cards {
     display: flex;
     flex-direction: column;
@@ -50,30 +50,56 @@
   .card {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     width: 80%;
-    height: 140px;
-    
+    height: 140px;  
   }
-  .card .titulo {
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .texto {
-    font-size: 15px;
-    font-weight: 300;
-  }
-  
   .card .img-card {
     margin: 0;
     width: 100px;
     height: 100px;
   }
+
   .card .titulo {
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 20px;
+  }
+
+.card .texto {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card .videojuego{
+  width: 250px;
+  height: 150px;
+  margin-left: 15px;
+}
+
+.card .fotografia{
+  width: 120px;
+  height: 120px;
+  
+  margin-bottom: -30px;
+}
+
+.card .notebook{
+  width: 140px;
+  height: 140px;
+  margin-bottom: -30px;
 }
 }
 
+@media only screen and (max-width: 480px) {
+  .card .titulo {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .card .texto {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
 
 

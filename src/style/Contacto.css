@@ -85,7 +85,7 @@
   width: 23px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 850px) {
   .contacto-formulario{
     width: 100%;
   }

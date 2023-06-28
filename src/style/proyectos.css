@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 400px;
+  width: 90%;
   height: 150px;
   backdrop-filter: blur(1000px);
 }
@@ -72,7 +72,7 @@
 }
 
 /* Hasta 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 850px) {
   .Proyectos{
     display: flex;
     flex-direction: column;
@@ -84,6 +84,33 @@
     display: none;
   }
   .proyecto{
+    width: 70%;
+    height: 200px;
+    background-position: center;
+    gap: 0;
+  }
+  .derecha{
+    width: 100%;
+  }
+  .titulo-proyectos{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .estudiando{
+    display: none;
+  }
+
+  .proyecto{
+    height: 150px;
     width: 300px;
     background-position: center;
     gap: 0;

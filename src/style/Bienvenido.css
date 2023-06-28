@@ -78,7 +78,7 @@ h1, h2{
 }
 
 /* Hasta 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 850px) {
   .bienvenido .bienvenido-top{
     display: flex;
     flex-direction: row;
@@ -90,6 +90,16 @@ h1, h2{
     width: 200px;
   }
 
+  .bienvenido-main{
+    flex-direction: column;
+  }
+  
+  .derecha .bloque{
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .bienvenido-main .derecha{
     display: none;
   }
