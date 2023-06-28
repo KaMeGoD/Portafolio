@@ -15,7 +15,7 @@ function App() {
   const pasatiemposRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottonBienvenido = () =>{
-    pasatiemposRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    pasatiemposRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   useEffect(()=>{

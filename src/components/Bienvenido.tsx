@@ -2,7 +2,6 @@ import '../style/Bienvenido.css';
 import 'hover.css'
 import logo from "../assets/img/logo.png";
 import saludo from '../assets/img/hola amigo.png';
-import bloques from '../assets/img/bloques.png'
 
 // 
 
