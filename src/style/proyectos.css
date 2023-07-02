@@ -26,6 +26,9 @@
 .juegoPPT{
   background-image: url(../assets/img/proyecto2.png);
 }
+.apiPaises{
+  background-image: url(../assets/img/proyecto3.png );
+}
 .titulo-proyecto{
   font-size: medium;
 }
@@ -60,7 +63,13 @@
   
 }
 .proyecto-wrap-true{
-  padding: 44px 100px 43px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
   backdrop-filter: blur(10px);
   transition: 1000ms;
 }
